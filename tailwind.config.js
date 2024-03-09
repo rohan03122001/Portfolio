@@ -7,10 +7,13 @@ module.exports = {
         "sm":"480px"
       },
       fontFamily: {
-        nunito:["Nunito", "sans-serif"]
+        poppins:["Poppins", "sans-serif"]
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('./css/custom.css'),
+    require('./css/mediaqueries.css')
+  ],
 }
 

@@ -3,17 +3,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/mediaqueries.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Tailwind Portfolio</title>
 </head>
-<body class="font-nunito">
-    <!--intro-->
-    <div class="h-1/2 lg:h-screen bg-gradient-to-t from-indigo-200 ">
-        <!--Navbar-->
-        <nav class="w-full fixed top-0 bg-red-600">
-            <div class="container mx-auto py-5 "> hello </div>
-        </nav>
-    </div>
-
+<body class="font-poppins">
+    <script src="script.js"></script>
+    <nav id="desktop-nav" class=" flex justify-around items-center" style="height: 17vh;">
+        <div class="Logo" >Rohan Bhujbal</div>
+        <div>
+            <ul class="flex gap-2 text-lg">
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav" class=" flex justify-around items-center" style="height: 17vh;">
+        <div class="Logo" >Rohan Bhujbal</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#project" onclick="toggleMenu()">Project</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            </div>
+        </div>
+    </nav>
 </body>
+
 </html>
